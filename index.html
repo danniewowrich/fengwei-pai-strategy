@@ -68,264 +68,125 @@ body {
   margin: 0 auto;
   padding: 40px 24px;
 }
-.section {
-  margin-bottom: 56px;
-}
+.section { margin-bottom: 56px; }
 .section-title {
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: var(--primary);
-  margin-bottom: 24px;
-  padding-bottom: 12px;
-  border-bottom: 3px solid var(--accent);
-  display: inline-block;
+  font-size: 1.8rem; font-weight: 700; color: var(--primary);
+  margin-bottom: 24px; padding-bottom: 12px;
+  border-bottom: 3px solid var(--accent); display: inline-block;
 }
 .subsection-title {
-  font-size: 1.3rem;
-  font-weight: 700;
-  color: var(--primary);
+  font-size: 1.3rem; font-weight: 700; color: var(--primary);
   margin: 28px 0 16px;
 }
-h4 {
-  font-size: 1.05rem;
-  font-weight: 600;
-  color: var(--text);
-  margin: 20px 0 10px;
-}
-p {
-  margin-bottom: 14px;
-  color: var(--text);
-}
-p strong, li strong {
-  color: var(--accent);
-}
+h4 { font-size: 1.05rem; font-weight: 600; color: var(--text); margin: 20px 0 10px; }
+p { margin-bottom: 14px; color: var(--text); }
+p strong, li strong { color: var(--accent); }
 .highlight-box {
   background: linear-gradient(135deg, #fff5f5 0%, #fff 100%);
-  border-left: 4px solid var(--accent);
-  border-radius: 8px;
-  padding: 20px 24px;
-  margin: 20px 0;
+  border-left: 4px solid var(--accent); border-radius: 8px;
+  padding: 20px 24px; margin: 20px 0;
   box-shadow: 0 2px 8px rgba(0,0,0,0.06);
 }
-.highlight-box p {
-  margin-bottom: 8px;
-}
-.highlight-box p:last-child {
-  margin-bottom: 0;
-}
+.highlight-box p { margin-bottom: 8px; }
+.highlight-box p:last-child { margin-bottom: 0; }
 .callout {
   background: linear-gradient(135deg, #f0fff4 0%, #fff 100%);
-  border-left: 4px solid var(--green);
-  border-radius: 8px;
-  padding: 20px 24px;
-  margin: 20px 0;
+  border-left: 4px solid var(--green); border-radius: 8px;
+  padding: 20px 24px; margin: 20px 0;
   box-shadow: 0 2px 8px rgba(0,0,0,0.06);
 }
 .callout p { margin-bottom: 6px; }
 .callout p:last-child { margin-bottom: 0; }
 .info-box {
   background: linear-gradient(135deg, #eef4ff 0%, #fff 100%);
-  border-left: 4px solid var(--blue);
-  border-radius: 8px;
-  padding: 20px 24px;
-  margin: 20px 0;
+  border-left: 4px solid var(--blue); border-radius: 8px;
+  padding: 20px 24px; margin: 20px 0;
   box-shadow: 0 2px 8px rgba(0,0,0,0.06);
 }
 .info-box p { margin-bottom: 8px; }
 .info-box p:last-child { margin-bottom: 0; }
 table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 20px 0;
-  background: var(--card-bg);
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  font-size: 0.95rem;
+  width: 100%; border-collapse: collapse; margin: 20px 0;
+  background: var(--card-bg); border-radius: 8px; overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); font-size: 0.95rem;
 }
 th {
-  background: var(--primary);
-  color: #fff;
-  padding: 12px 16px;
-  text-align: left;
-  font-weight: 600;
-  font-size: 0.9rem;
+  background: var(--primary); color: #fff; padding: 12px 16px;
+  text-align: left; font-weight: 600; font-size: 0.9rem;
 }
-td {
-  padding: 12px 16px;
-  border-bottom: 1px solid var(--border);
-  color: var(--text);
-}
-tr:last-child td {
-  border-bottom: none;
-}
-tr:nth-child(even) td {
-  background: #f7f8fa;
-}
-td strong {
-  color: var(--accent);
-}
-/* CPA 高亮样式 */
+td { padding: 12px 16px; border-bottom: 1px solid var(--border); color: var(--text); }
+tr:last-child td { border-bottom: none; }
+tr:nth-child(even) td { background: #f7f8fa; }
+td strong { color: var(--accent); }
+/* CPA 高亮（黄色） */
 .cpa-highlight {
   background: linear-gradient(135deg, #fff3cd 0%, #fffbea 100%);
-  color: #856404;
-  font-weight: 700;
-  padding: 2px 8px;
-  border-radius: 4px;
-  border: 1px solid #ffc107;
+  color: #856404; font-weight: 700;
+  padding: 2px 8px; border-radius: 4px; border: 1px solid #ffc107;
 }
 .cpa-highlight-row td {
   background: linear-gradient(135deg, #fff8e1 0%, #fffde7 100%) !important;
   font-weight: 600;
 }
-.cpa-highlight-row td strong {
-  color: #b8860b;
+.cpa-highlight-row td strong { color: #b8860b; }
+/* CAC 高亮（绿色）— 提醒客户这才是真正的广告出价参考 */
+.cac-highlight {
+  background: linear-gradient(135deg, #d4edda 0%, #e8f5e9 100%);
+  color: #155724; font-weight: 700;
+  padding: 2px 8px; border-radius: 4px; border: 1px solid #28a745;
 }
+.cac-highlight-row td {
+  background: linear-gradient(135deg, #e8f5e9 0%, #f1f8f4 100%) !important;
+  font-weight: 600;
+}
+.cac-highlight-row td strong { color: #155724; }
 .formula {
-  background: var(--primary);
-  color: #fff;
-  border-radius: 10px;
-  padding: 24px;
-  margin: 20px 0;
+  background: var(--primary); color: #fff; border-radius: 10px;
+  padding: 24px; margin: 20px 0;
   font-family: "SF Mono", "Fira Code", monospace;
-  font-size: 0.95rem;
-  line-height: 2;
-  overflow-x: auto;
+  font-size: 0.95rem; line-height: 2; overflow-x: auto;
 }
-.formula .label {
-  color: var(--gold);
-  font-weight: 700;
-}
-.formula .result {
-  color: var(--accent-light);
-  font-weight: 700;
-}
+.formula .label { color: var(--gold); font-weight: 700; }
+.formula .result { color: var(--accent-light); font-weight: 700; }
 .stat-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 16px;
-  margin: 24px 0;
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px; margin: 24px 0;
 }
 .stat-card {
-  background: var(--card-bg);
-  border-radius: 10px;
-  padding: 24px 16px;
-  text-align: center;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  background: var(--card-bg); border-radius: 10px; padding: 24px 16px;
+  text-align: center; box-shadow: 0 2px 12px rgba(0,0,0,0.08);
   border-top: 4px solid var(--accent);
 }
-.stat-card .value {
-  font-size: 2rem;
-  font-weight: 800;
-  color: var(--primary);
-  line-height: 1.2;
-}
-.stat-card .label {
-  font-size: 0.85rem;
-  color: var(--text-light);
-  margin-top: 6px;
-}
+.stat-card .value { font-size: 2rem; font-weight: 800; color: var(--primary); line-height: 1.2; }
+.stat-card .label { font-size: 0.85rem; color: var(--text-light); margin-top: 6px; }
 .stat-card.green { border-top-color: var(--green); }
 .stat-card.green .value { color: var(--green); }
 .stat-card.blue { border-top-color: var(--blue); }
 .stat-card.blue .value { color: var(--blue); }
 .stat-card.gold { border-top-color: var(--gold); }
 .stat-card.gold .value { color: var(--gold); }
-.vs-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  margin: 24px 0;
-}
+.vs-container { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 24px 0; }
 @media (max-width: 700px) {
   .vs-container { grid-template-columns: 1fr; }
   .hero h1 { font-size: 1.8rem; }
   .hero .subtitle { font-size: 1rem; }
 }
-.vs-card {
-  border-radius: 12px;
-  padding: 24px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-}
-.vs-card.wx {
-  background: linear-gradient(135deg, #f0fff4 0%, #e0f7fa 100%);
-  border: 2px solid var(--green);
-}
-.vs-card.dy {
-  background: linear-gradient(135deg, #fff5f5 0%, #fff0f0 100%);
-  border: 2px solid var(--accent);
-}
-.vs-card h4 {
-  font-size: 1.1rem;
-  margin-bottom: 12px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-.vs-card .badge {
-  display: inline-block;
-  padding: 2px 10px;
-  border-radius: 20px;
-  font-size: 0.75rem;
-  font-weight: 700;
-}
-.vs-card.wx .badge { background: var(--green); color: #fff; }
-.vs-card.dy .badge { background: var(--accent); color: #fff; }
-.vs-card ul {
-  list-style: none;
-  padding: 0;
-}
-.vs-card li {
-  padding: 6px 0;
-  font-size: 0.95rem;
-  border-bottom: 1px dashed rgba(0,0,0,0.08);
-}
-.vs-card li:last-child { border-bottom: none; }
-ul, ol {
-  padding-left: 24px;
-  margin-bottom: 14px;
-}
+ul, ol { padding-left: 24px; margin-bottom: 14px; }
 li { margin-bottom: 6px; }
 .toc {
-  background: var(--card-bg);
-  border-radius: 12px;
-  padding: 28px 32px;
-  margin-bottom: 48px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  background: var(--card-bg); border-radius: 12px; padding: 28px 32px;
+  margin-bottom: 48px; box-shadow: 0 2px 12px rgba(0,0,0,0.08);
 }
-.toc h3 {
-  font-size: 1.1rem;
-  color: var(--primary);
-  margin-bottom: 16px;
-  font-weight: 700;
-}
-.toc ol {
-  padding-left: 20px;
-}
-.toc li {
-  margin-bottom: 8px;
-  color: var(--text-light);
-}
-.toc a {
-  color: var(--accent);
-  text-decoration: none;
-  font-weight: 500;
-}
-.toc a:hover {
-  text-decoration: underline;
-}
+.toc h3 { font-size: 1.1rem; color: var(--primary); margin-bottom: 16px; font-weight: 700; }
+.toc ol { padding-left: 20px; }
+.toc li { margin-bottom: 8px; color: var(--text-light); }
+.toc a { color: var(--accent); text-decoration: none; font-weight: 500; }
+.toc a:hover { text-decoration: underline; }
 .footer {
-  text-align: center;
-  padding: 40px 20px;
-  color: var(--text-light);
-  font-size: 0.85rem;
-  border-top: 1px solid var(--border);
-  margin-top: 40px;
+  text-align: center; padding: 40px 20px; color: var(--text-light);
+  font-size: 0.85rem; border-top: 1px solid var(--border); margin-top: 40px;
 }
-.summary-table td:first-child {
-  font-weight: 600;
-  background: #f0f0f5;
-}
+.summary-table td:first-child { font-weight: 600; background: #f0f0f5; }
 </style>
 </head>
 <body>
@@ -337,6 +198,13 @@ li { margin-bottom: 6px; }
 </div>
 
 <div class="container">
+
+<!-- 图例 -->
+<div class="info-box" style="margin-bottom: 32px;">
+  <p><strong style="color:var(--blue)">📖 阅读指引：本文使用两套高亮体系</strong></p>
+  <p><span class="cpa-highlight">CPA（黄色高亮）</span> = 广告平台下单成本，混合新老客，是客户后台看到的数字<br>
+  <span class="cac-highlight">真实新客CAC（绿色高亮）</span> = 排除老客后的真实新客获客成本，是广告出价的真正参考基准</p>
+</div>
 
 <!-- TOC -->
 <div class="toc">
@@ -357,14 +225,14 @@ li { margin-bottom: 6px; }
 
   <p>锋味派视频号 YTD 已完成 <strong>3200万</strong> GMV，全年目标 <strong>1亿</strong>，下半年还需 <strong>6800万</strong>。老客占比已达 <strong>60%</strong>，增长的天花板清晰可见——拉新是达成目标的唯一出路。</p>
 
-  <p>但客户面临一个核心矛盾：当前综合下单成本（CPA）约 <strong>42.11元</strong>（来自 ADQ 后台实际数据），恰好卡在食品饮料 ADQ 大盘均线下方。客户按照既定费比和 ROI 目标倒推，认为 42 元就是可接受的成本天花板。在这个逻辑下，提价 = 亏损，放量 = 风险。</p>
+  <p>但客户面临一个核心矛盾：当前综合下单成本（CPA）约 <span class="cpa-highlight">42.11元</span>（来自 ADQ 后台实际数据），恰好卡在食品饮料 ADQ 大盘均线下方。客户按照既定费比和 ROI 目标倒推，认为 42 元就是可接受的成本天花板。在这个逻辑下，提价 = 亏损，放量 = 风险。</p>
 
   <div class="highlight-box">
     <p><strong>问题的根源不在于 42 元太贵，而在于客户把一个错误的数字当成了天花板。</strong></p>
     <p>42 元是"广告平台下单成本（CPA）"，不是"新客获取成本（CAC）"。两者差了一倍以上。</p>
   </div>
 
-  <p>42 元是"综合下单成本"——它混合了新客首单和老客复购。真正的"新客获取成本"远高于这个数字，而真正的"新客价值"（LTV）也远高于首单金额。客户需要从"费比倒推"转向"LTV 正推"，重新定义可接受的新客获客成本，才能打开增长空间。</p>
+  <p>42 元是"综合下单成本"——它混合了新客首单和老客复购。真正的<span class="cac-highlight">真实新客CAC</span>远高于这个数字，而真正的"新客价值"（LTV）也远高于首单金额。客户需要从"费比倒推"转向"LTV 正推"，重新定义可接受的新客获客成本，才能打开增长空间。</p>
 
   <p>本文回答四个问题：</p>
   <ol>
@@ -382,7 +250,7 @@ li { margin-bottom: 6px; }
   <div class="info-box">
     <p><strong style="color:var(--blue)">📖 概念辨析：CPA vs CAC —— 这是两个完全不同的指标</strong></p>
     <table style="margin: 10px 0 0; box-shadow:none;">
-      <tr><th style="background:var(--blue);">维度</th><th style="background:var(--blue);">CPA（广告下单成本）</th><th style="background:var(--blue);">CAC（新客获取成本）</th></tr>
+      <tr><th style="background:var(--blue);">维度</th><th style="background:var(--blue);"><span class="cpa-highlight">CPA（广告下单成本）</span></th><th style="background:var(--blue);"><span class="cac-highlight">CAC（新客获取成本）</span></th></tr>
       <tr><td><strong>本质</strong></td><td>广告平台的<strong>计费指标</strong></td><td>业务的<strong>获客成本指标</strong></td></tr>
       <tr><td><strong>分母</strong></td><td>"行动"数 = 所有订单（新客+老客混在一起）</td><td>只有<strong>新客</strong>数（从未买过的人）</td></tr>
       <tr><td><strong>包含谁</strong></td><td>老客复购 + 新客首单，全部计入</td><td>只计算新客首单</td></tr>
@@ -397,8 +265,8 @@ li { margin-bottom: 6px; }
       → 新客CAC = (混合CPA - 老客占比×老客CPA) ÷ 新客占比
     </div>
     <p><strong>举例：</strong>花 10,000 元投广告，带来 200 个订单（120 个老客 + 80 个新客）<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;CPA = 10,000 ÷ 200 = <strong>50 元</strong>（每单花费，混合新老客）<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;CAC = 10,000 ÷ 80 = <strong>125 元</strong>（每个新客花费）<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;<span class="cpa-highlight">CPA = 10,000 ÷ 200 = 50 元</span>（每单花费，混合新老客）<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;<span class="cac-highlight">CAC = 10,000 ÷ 80 = 125 元</span>（每个新客花费）<br>
     &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:var(--accent);">→ 同样的钱，CPA 只有 CAC 的 40%</span></p>
   </div>
 
@@ -406,10 +274,10 @@ li { margin-bottom: 6px; }
   <p>客户当前估算新客成本的路径是"倒推"：</p>
   <div class="formula">
     <span class="label">费比倒推路径：</span><br>
-    目标费比（如 15%） → 倒推可接受 CPM/CPC → 得到"综合下单成本(CPA)" 42.11 元 → 以此为新客出价天花板
+    目标费比（如 15%） → 倒推可接受 CPM/CPC → 得到"综合下单成本(CPA)" <span class="cpa-highlight">42.11 元</span> → 以此为新客出价天花板
   </div>
   <div class="highlight-box">
-    <p><strong>致命缺陷：</strong>42.11 元是"广告下单成本(CPA)"，不是"新客获取成本(CAC)"。客户用混合成本给新客定价，等于让新客的出价被老客的低价拉下来——结果是新客出价不够高，抢不到量。</p>
+    <p><strong>致命缺陷：</strong><span class="cpa-highlight">42.11 元</span>是"广告下单成本(CPA)"，不是<span class="cac-highlight">真实新客CAC</span>。客户用混合成本给新客定价，等于让新客的出价被老客的低价拉下来——结果是新客出价不够高，抢不到量。</p>
   </div>
 
   <div class="subsection-title">1.2 "42.11元"是什么？—— 实际 CPA 数据拆解</div>
@@ -420,57 +288,57 @@ li { margin-bottom: 6px; }
     <tr><td>直播</td><td>4,509,985</td><td>88,984</td><td>132.52</td><td><strong class="cpa-highlight">50.68 元</strong></td><td>2.61</td></tr>
     <tr><td>小店</td><td>2,568,962</td><td>69,678</td><td>127.47</td><td><strong class="cpa-highlight">36.87 元</strong></td><td>3.46</td></tr>
   </table>
-  <p><strong>关键发现：</strong>这三个数字（42.11 / 50.68 / 36.87）都是 <strong>CPA</strong>——即广告平台上每带来一"下单"所花的钱。它们混合了新客和老客，不能直接当作新客成本使用。</p>
+  <p><strong>关键发现：</strong>这三个数字（<span class="cpa-highlight">42.11 / 50.68 / 36.87</span>）都是 <strong>CPA</strong>——即广告平台上每带来一"下单"所花的钱。它们混合了新客和老客，不能直接当作新客成本使用。</p>
 
   <div class="subsection-title">1.3 从 CPA 反推真实新客 CAC</div>
-  <p>42.11 元是一个"混合数字"。已知老客订单占比约 <strong>60%</strong>，可以建立方程求解真实新客 CAC：</p>
+  <p><span class="cpa-highlight">42.11 元</span>是一个"混合数字"。已知老客订单占比约 <strong>60%</strong>，可以建立方程求解<span class="cac-highlight">真实新客CAC</span>：</p>
   <table>
     <tr><th>订单类型</th><th>占比</th><th>实际CPA（估）</th><th>加权贡献</th></tr>
     <tr><td>老客复购订单</td><td>60%</td><td>~25-30 元（已有品牌认知，转化成本低）</td><td>15.0-18.0 元</td></tr>
     <tr><td>新客首单</td><td>40%</td><td><strong>? 元</strong>（待求）</td><td>? 元</td></tr>
-    <tr><td><strong>合计（混合CPA）</strong></td><td>100%</td><td>—</td><td><strong>= 42.11 元</strong></td></tr>
+    <tr><td><strong>合计（混合CPA）</strong></td><td>100%</td><td>—</td><td><strong>= <span class="cpa-highlight">42.11 元</span></strong></td></tr>
   </table>
   <div class="formula">
-    <span class="label">数学验证（反推新客 CAC）：</span><br>
-    设老客 CPA = 25 元 → 新客 CAC = (42.11 - 0.6×25) ÷ 0.4 = (42.11 - 15) ÷ 0.4 = <span class="result">67.8 ≈ 68 元</span><br>
-    设老客 CPA = 28 元 → 新客 CAC = (42.11 - 0.6×28) ÷ 0.4 = (42.11 - 16.8) ÷ 0.4 = <span class="result">63.3 ≈ 63 元</span><br>
-    设老客 CPA = 30 元 → 新客 CAC = (42.11 - 0.6×30) ÷ 0.4 = (42.11 - 18) ÷ 0.4 = <span class="result">60.3 ≈ 60 元</span><br><br>
-    <span class="result">→ 真实新客 CAC 约 60-70 元（均值约 64 元）</span>
+    <span class="label">数学验证（反推真实新客 CAC）：</span><br>
+    设老客 CPA = 25 元 → <span class="cac-highlight">真实新客CAC</span> = (42.11 - 0.6×25) ÷ 0.4 = (42.11 - 15) ÷ 0.4 = <span class="result">67.8 ≈ 68 元</span><br>
+    设老客 CPA = 28 元 → <span class="cac-highlight">真实新客CAC</span> = (42.11 - 0.6×28) ÷ 0.4 = (42.11 - 16.8) ÷ 0.4 = <span class="result">63.3 ≈ 63 元</span><br>
+    设老客 CPA = 30 元 → <span class="cac-highlight">真实新客CAC</span> = (42.11 - 0.6×30) ÷ 0.4 = (42.11 - 18) ÷ 0.4 = <span class="result">60.3 ≈ 60 元</span><br><br>
+    <span class="result">→ <span class="cac-highlight">真实新客CAC 约 60-70 元</span>（均值约 64 元）</span>
   </div>
-  <p><strong>结论：客户以为自己的新客成本是 42 元（CPA），实际上真实新客 CAC 约 60-70 元。</strong>42 元之所以"能跑"，是因为老客订单在补贴它（老客转化成本低，把混合 CPA 拉下来了）。当客户用 42 元作为新客出价天花板时，实际上是在用远低于真实成本的价格去竞价——新客自然抢不到量。</p>
+  <p><strong>结论：客户以为自己的新客成本是 <span class="cpa-highlight">42 元(CPA)</span>，实际上<span class="cac-highlight">真实新客CAC 约 60-70 元</span>。</strong>42 元之所以"能跑"，是因为老客订单在补贴它（老客转化成本低，把混合 CPA 拉下来了）。当客户用 42 元作为新客出价天花板时，实际上是在用远低于真实成本的价格去竞价——新客自然抢不到量。</p>
 
   <div class="subsection-title">1.4 分链路反推：小店 vs 直播的真实新客 CAC</div>
   <p>同样的方法应用于两条链路各自的 CPA 数据：</p>
   
-  <h4>小店链路（CPA 36.87 元）</h4>
+  <h4>小店链路（<span class="cpa-highlight">CPA 36.87 元</span>）</h4>
   <p>小店依赖社交推荐，老客回流比例较高，估计老客占比约 <strong>55%</strong>：</p>
   <div class="formula">
-    <span class="label">小店新客 CAC 反推：</span><br>
-    设老客 CPA = 22 元 → 新客 CAC = (36.87 - 0.55×22) ÷ 0.45 = (36.87 - 12.1) ÷ 0.45 = <span class="result">55.0 ≈ 55 元</span><br>
-    设老客 CPA = 25 元 → 新客 CAC = (36.87 - 0.55×25) ÷ 0.45 = (36.87 - 13.75) ÷ 0.45 = <span class="result">51.4 ≈ 51 元</span><br>
-    <span class="result">→ 小店真实新客 CAC 约 50-58 元</span>
+    <span class="label">小店真实新客 CAC 反推：</span><br>
+    设老客 CPA = 22 元 → <span class="cac-highlight">真实新客CAC</span> = (36.87 - 0.55×22) ÷ 0.45 = (36.87 - 12.1) ÷ 0.45 = <span class="result">55.0 ≈ 55 元</span><br>
+    设老客 CPA = 25 元 → <span class="cac-highlight">真实新客CAC</span> = (36.87 - 0.55×25) ÷ 0.45 = (36.87 - 13.75) ÷ 0.45 = <span class="result">51.4 ≈ 51 元</span><br>
+    <span class="result">→ <span class="cac-highlight">小店真实新客CAC 约 50-58 元</span></span>
   </div>
 
-  <h4>直播链路（CPA 50.68 元）</h4>
+  <h4>直播链路（<span class="cpa-highlight">CPA 50.68 元</span>）</h4>
   <p>直播间粉丝沉淀多，老客回流比例高，估计老客占比约 <strong>60%</strong>：</p>
   <div class="formula">
-    <span class="label">直播新客 CAC 反推：</span><br>
-    设老客 CPA = 30 元 → 新客 CAC = (50.68 - 0.6×30) ÷ 0.4 = (50.68 - 18) ÷ 0.4 = <span class="result">81.7 ≈ 82 元</span><br>
-    设老客 CPA = 32 元 → 新客 CAC = (50.68 - 0.6×32) ÷ 0.4 = (50.68 - 19.2) ÷ 0.4 = <span class="result">78.7 ≈ 79 元</span><br>
-    设老客 CPA = 35 元 → 新客 CAC = (50.68 - 0.6×35) ÷ 0.4 = (50.68 - 21) ÷ 0.4 = <span class="result">74.2 ≈ 74 元</span><br>
-    <span class="result">→ 直播真实新客 CAC 约 74-82 元</span>
+    <span class="label">直播真实新客 CAC 反推：</span><br>
+    设老客 CPA = 30 元 → <span class="cac-highlight">真实新客CAC</span> = (50.68 - 0.6×30) ÷ 0.4 = (50.68 - 18) ÷ 0.4 = <span class="result">81.7 ≈ 82 元</span><br>
+    设老客 CPA = 32 元 → <span class="cac-highlight">真实新客CAC</span> = (50.68 - 0.6×32) ÷ 0.4 = (50.68 - 19.2) ÷ 0.4 = <span class="result">78.7 ≈ 79 元</span><br>
+    设老客 CPA = 35 元 → <span class="cac-highlight">真实新客CAC</span> = (50.68 - 0.6×35) ÷ 0.4 = (50.68 - 21) ÷ 0.4 = <span class="result">74.2 ≈ 74 元</span><br>
+    <span class="result">→ <span class="cac-highlight">直播真实新客CAC 约 74-82 元</span></span>
   </div>
 
   <table>
-    <tr><th>链路</th><th>实际CPA（ADQ后台）</th><th>老客占比（估）</th><th>老客CPA（估）</th><th><strong>真实新客CAC</strong></th></tr>
-    <tr><td><strong>整体</strong></td><td class="cpa-highlight"><strong>42.11 元</strong></td><td>60%</td><td>25-30 元</td><td><strong>60-70 元</strong></td></tr>
-    <tr><td><strong>小店</strong></td><td class="cpa-highlight"><strong>36.87 元</strong></td><td>55%</td><td>22-25 元</td><td><strong>50-58 元</strong></td></tr>
-    <tr><td><strong>直播</strong></td><td class="cpa-highlight"><strong>50.68 元</strong></td><td>60%</td><td>30-35 元</td><td><strong>74-82 元</strong></td></tr>
+    <tr><th>链路</th><th>实际CPA（ADQ后台）</th><th>老客占比（估）</th><th>老客CPA（估）</th><th><span class="cac-highlight">真实新客CAC</span></th></tr>
+    <tr class="cac-highlight-row"><td><strong>整体</strong></td><td><span class="cpa-highlight">42.11 元</span></td><td>60%</td><td>25-30 元</td><td><strong>60-70 元</strong></td></tr>
+    <tr class="cac-highlight-row"><td><strong>小店</strong></td><td><span class="cpa-highlight">36.87 元</span></td><td>55%</td><td>22-25 元</td><td><strong>50-58 元</strong></td></tr>
+    <tr class="cac-highlight-row"><td><strong>直播</strong></td><td><span class="cpa-highlight">50.68 元</span></td><td>60%</td><td>30-35 元</td><td><strong>74-82 元</strong></td></tr>
   </table>
 
   <div class="callout">
     <p><strong>小结：客户不是"出价太高"，而是"对新客出价太低"</strong></p>
-    <p>客户在用一个<strong>被低估的成本（CPA 42元）</strong>，去衡量一个<strong>被低估的价值（LTV 166元）</strong>——双重的低估，导致拉新投入严重不足。</p>
+    <p>客户在用一个<strong>被低估的成本（<span class="cpa-highlight">CPA 42元</span>）</strong>，去衡量一个<strong>被低估的价值（LTV 133-166元）</strong>——双重的低估，导致拉新投入严重不足。</p>
     <p><strong>更严谨的做法：</strong>建议客户在 ADQ 后台分别建"排除已购人群"和"已购人群"两个计划跑一周，即可获得新老客的真实分层 CPA，将上述反推值变为实测值。</p>
   </div>
 </div>
@@ -497,40 +365,42 @@ li { margin-bottom: 6px; }
   <table>
     <tr><th>参数</th><th>数值</th><th>依据</th></tr>
     <tr><td>客单价（AOV）</td><td>130 元</td><td>ADQ 后台实际下单单价（127-132 元取整）</td></tr>
-    <tr><td>毛利率</td><td><strong>50%</strong></td><td>品牌加工食品渠道毛利率（扣除原材料、加工、平台佣金、物流仓配）</td></tr>
+    <tr><td>毛利率</td><td><strong>40-50%</strong></td><td>品牌加工食品渠道毛利率区间（扣除原材料、加工、平台佣金、物流仓配）。保守取 40%，乐观取 50%</td></tr>
     <tr><td>月复购率</td><td>28%</td><td>视频号社交电商均值（高于抖音18%）</td></tr>
     <tr><td>月衰减率</td><td>15%</td><td>用户活跃度自然衰减</td></tr>
   </table>
   <h4>12个月逐月计算</h4>
   <div class="formula">
-    <span class="label">LTV 计算逻辑：</span><br>
-    Month 1: 首购 130 元，毛利 130×50% = <strong>65 元</strong><br>
-    Month 2: 130 × 28% × (1-15%) = 30.94 元收入，毛利 15.47 元<br>
-    Month 3: 130 × 28% × (1-15%)² = 26.30 元收入，毛利 13.15 元<br>
-    Month 4: 130 × 28% × (1-15%)³ = 22.35 元收入，毛利 11.18 元<br>
+    <span class="label">LTV 计算逻辑（按毛利率 40-50% 区间）：</span><br>
+    Month 1: 首购 130 元，毛利 130×(40%~50%) = <strong>52~65 元</strong><br>
+    Month 2: 130 × 28% × (1-15%) = 30.94 元收入，毛利 12.4~15.5 元<br>
+    Month 3: 130 × 28% × (1-15%)² = 26.30 元收入，毛利 10.5~13.2 元<br>
+    Month 4: 130 × 28% × (1-15%)³ = 22.35 元收入，毛利 8.9~11.2 元<br>
     ... 逐月递减 ...<br><br>
-    <span class="result">12 个月 LTV（收入）= 332 元 | LTV（毛利）= 166 元 | 总订单数 = 2.55 单</span>
+    <span class="result">12 个月 LTV（收入）= 332 元<br>
+    LTV（毛利）= 133~166 元（40%→133 / 50%→166）<br>
+    总订单数 = 2.55 单</span>
   </div>
-  <p>也就是说：一个新客在 12 个月内平均会下 <strong>2.55 单</strong>，贡献 <strong>332 元收入</strong>、<strong>166 元毛利</strong>。这个数字才是衡量"该花多少钱拉新"的基准。</p>
+  <p>也就是说：一个新客在 12 个月内平均会下 <strong>2.55 单</strong>，贡献 <strong>332 元收入</strong>、<strong>133-166 元毛利</strong>。这个数字才是衡量"该花多少钱拉新"的基准。</p>
 
   <div class="subsection-title">2.3 可接受 CAC 范围与回本周期</div>
   <table>
-    <tr><th>新客CAC</th><th>首单毛利</th><th>首单缺口</th><th>回本周期</th><th>LTV/CAC</th><th>判定</th></tr>
-    <tr><td>42 元（CPA，错误基准）</td><td>65 元</td><td>+23 元</td><td>首单即回本</td><td>4.0x</td><td>✅ 但这是假象（用了CPA而非CAC）</td></tr>
-    <tr><td>60 元（真实CAC下限）</td><td>65 元</td><td>+5 元</td><td>首单基本回本</td><td>2.8x</td><td>✅ 优秀</td></tr>
-    <tr><td>64 元（真实CAC均值）</td><td>65 元</td><td>-1 元</td><td>~1 个月</td><td>2.6x</td><td>✅ 优秀</td></tr>
-    <tr><td>70 元（真实CAC上限）</td><td>65 元</td><td>-5 元</td><td>~1.5 个月</td><td>2.4x</td><td>✅ 健康</td></tr>
-    <tr><td>82 元（直播高水位）</td><td>65 元</td><td>-17 元</td><td>~2 个月</td><td>2.0x</td><td>✅ 健康</td></tr>
+    <tr><th><span class="cac-highlight">真实新客CAC</span></th><th>首单毛利(40%)</th><th>首单毛利(50%)</th><th>回本周期</th><th>LTV/CAC(40%)</th><th>LTV/CAC(50%)</th><th>判定</th></tr>
+    <tr><td><span class="cpa-highlight">42 元(CPA，错误基准)</span></td><td>52 元</td><td>65 元</td><td>首单打平</td><td>3.2x</td><td>4.0x</td><td>✅ 但这是假象（用了CPA而非CAC）</td></tr>
+    <tr class="cac-highlight-row"><td><strong>60 元（CAC下限）</strong></td><td>52 元</td><td>65 元</td><td>首单打平~1月</td><td>2.2x</td><td>2.8x</td><td>✅ 优秀</td></tr>
+    <tr class="cac-highlight-row"><td><strong>64 元（CAC均值）</strong></td><td>52 元</td><td>65 元</td><td>~1-1.5月</td><td>2.1x</td><td>2.6x</td><td>✅ 优秀</td></tr>
+    <tr class="cac-highlight-row"><td><strong>70 元（CAC上限）</strong></td><td>52 元</td><td>65 元</td><td>~1.5-2月</td><td>1.9x</td><td>2.4x</td><td>✅ 健康</td></tr>
+    <tr class="cac-highlight-row"><td><strong>82 元（直播高水位）</strong></td><td>52 元</td><td>65 元</td><td>~2-3月</td><td>1.6x</td><td>2.0x</td><td>✅ 健康</td></tr>
   </table>
   <div class="callout">
-    <p><strong>关键发现（基于真实 ADQ 数据校正后）：</strong></p>
-    <p>• 真实新客 CAC 约 <strong>60-70 元</strong>（均值 64 元），远低于之前按 CPA=54 元反推的 85-100 元</p>
-    <p>• 首单毛利（65 元）<strong>几乎可以覆盖或超过</strong>真实新客 CAC！——这是非常健康的信号</p>
-    <p>• 即使按直播高水位 82 元计算，也仅需 <strong>约 2 个月</strong>即可回本</p>
-    <p>• 12 个月 LTV/CAC = <strong>2.0-2.6x</strong>，意味着每花 1 元拉新，12 个月后获得 2.0-2.6 元毛利回报</p>
+    <p><strong>关键发现（基于真实 ADQ 数据 + 40-50% 毛利率区间）：</strong></p>
+    <p>• <span class="cac-highlight">真实新客CAC 约 60-70 元</span>（均值 64 元），远低于之前按 CPA=54 元反推的 85-100 元</p>
+    <p>• 首单毛利（52-65 元）在保守毛利率（40%）下略有缺口，在乐观毛利率（50%）下<strong>几乎可以覆盖</strong><span class="cac-highlight">真实新客CAC</span></p>
+    <p>• 即使按直播高水位 82 元 + 保守毛利率 40% 计算，也仅需 <strong>约 3 个月</strong>即可回本</p>
+    <p>• 12 个月 LTV/CAC = <strong>1.6-2.8x</strong>（取决于毛利率和 CAC 水位），每花 1 元拉新获得 1.6-2.8 元毛利回报</p>
   </div>
   <div class="highlight-box">
-    <p><strong>核心结论：基于客户 ADQ 实际数据校正后，锋味派的真实新客 CAC 仅约 60-70 元，而首单毛利就有 65 元。</strong>这意味着新客拉新几乎是"首单打平或微赚"、后续 11 个月的复购全部是纯利润的投资模型。客户不是没有钱拉新，是算错了账——把 CPA 当成了 CAC。</p>
+    <p><strong>核心结论：基于客户 ADQ 实际数据校正后，<span class="cac-highlight">真实新客CAC 仅约 60-70 元</span>，而首单毛利有 52-65 元。</strong>即使在保守毛利率（40%）下，缺口也仅 8-18 元，通过 1-2 个月的复购即可弥补。这意味着拉新是一个"1-3 个月回本"的投资，后续 9-11 个月的复购全部是利润。客户不是没有钱拉新，是算错了账——把 CPA 当成了 CAC。</p>
   </div>
 </div>
 
@@ -552,27 +422,27 @@ li { margin-bottom: 6px; }
   <table>
     <tr><th>指标</th><th>视频号</th><th>抖音</th><th>差异</th></tr>
     <tr><td>客单价</td><td>130 元</td><td>130 元</td><td>相同</td></tr>
-    <tr><td>毛利率</td><td>50%</td><td>50%</td><td>相同</td></tr>
+    <tr><td>毛利率</td><td>40-50%</td><td>40-50%</td><td>相同</td></tr>
     <tr><td>月复购率</td><td><strong>28%</strong></td><td>18%</td><td>视频号高 56%</td></tr>
     <tr><td>12个月订单数</td><td><strong>2.55 单</strong></td><td>1.82 单</td><td>视频号多 0.73 单</td></tr>
     <tr><td>LTV（收入）</td><td><strong>332 元</strong></td><td>237 元</td><td>视频号高 40%</td></tr>
-    <tr><td>LTV（毛利）</td><td><strong>166 元</strong></td><td>118 元</td><td>视频号高 40%</td></tr>
+    <tr><td>LTV（毛利）</td><td><strong>133-166 元</strong></td><td>95-119 元</td><td>视频号高 40%</td></tr>
   </table>
   <div class="highlight-box">
-    <p>同样花 64 元拉一个新客，视频号新客 12 个月贡献 <strong>166 元</strong>毛利，抖音新客只有 <strong>118 元</strong>——在相同获客成本下，视频号的投资回报率高 <strong>40%</strong>。</p>
+    <p>同样花 <span class="cac-highlight">64 元</span>拉一个新客，视频号新客 12 个月贡献 <strong>133-166 元</strong>毛利，抖音新客只有 <strong>95-119 元</strong>——在相同获客成本下，视频号的投资回报率高 <strong>40%</strong>。</p>
   </div>
 
   <div class="subsection-title">3.3 回本周期与净利对比</div>
   <table>
-    <tr><th>平台</th><th>新客CAC</th><th>首单毛利</th><th>回本周期</th><th>12个月LTV(毛利)</th><th>12个月净利</th><th>LTV/CAC</th></tr>
-    <tr><td><strong>视频号</strong></td><td>64 元</td><td>65 元</td><td><strong>~首单打平</strong></td><td>166 元</td><td><strong>+102 元</strong></td><td><strong>2.6x</strong></td></tr>
-    <tr><td>抖音</td><td>120 元</td><td>65 元</td><td>~12 个月</td><td>118 元</td><td>~-2 元</td><td>~1.0x</td></tr>
+    <tr><th>平台</th><th><span class="cac-highlight">真实新客CAC</span></th><th>首单毛利</th><th>回本周期</th><th>12个月LTV(毛利)</th><th>12个月净利</th><th>LTV/CAC</th></tr>
+    <tr class="cac-highlight-row"><td><strong>视频号</strong></td><td><strong>64 元</strong></td><td>52-65 元</td><td><strong>~1-1.5月</strong></td><td>133-166 元</td><td><strong>+69~102 元</strong></td><td><strong>2.1-2.6x</strong></td></tr>
+    <tr><td>抖音</td><td>120 元</td><td>52-65 元</td><td>~12 个月</td><td>95-119 元</td><td>~-25~-1 元</td><td>~0.8-1.0x</td></tr>
   </table>
-  <p style="font-size: 0.85rem; color: var(--text-light);">注：抖音 CAC 120 元为行业数据估算（抖音竞价激烈，获客成本高于视频号）；视频号 CAC 64 元来自第一部分基于 ADQ 实际数据的反推。</p>
+  <p style="font-size: 0.85rem; color: var(--text-light);">注：抖音 CAC 120 元为行业数据估算（抖音竞价激烈，获客成本高于视频号）；视频号 CAC 64 元来自第一部分基于 ADQ 实际数据的反推。毛利率按 40-50% 区间计算。</p>
 
   <div class="callout">
-    <p><strong>结论：在视频号，新客首单毛利（65 元）几乎等于真实 CAC（64 元），意味着首单即接近打平，后续 11 个月复购全是净利润，12 个月净利高达 +102 元。</strong>在抖音，12 个月才基本打平，几乎没有利润空间。</p>
-    <p><strong>同样的产品、同样的毛利率，视频号的社交复购机制让拉新从"勉强打平"变成"首单盈利"。这不是"要不要拉新"的问题，是"在哪里拉新"的问题。</strong></p>
+    <p><strong>结论：在视频号，<span class="cac-highlight">真实新客CAC（64元）</span>与首单毛利（52-65元）接近，1-1.5 个月即可回本，后续 10-11 个月复购全是净利润，12 个月净利 +69~102 元。</strong>在抖音，12 个月才基本打平甚至亏损，几乎没有利润空间。</p>
+    <p><strong>同样的产品、同样的毛利率，视频号的社交复购机制让拉新从"勉强打平"变成"1个月回本+持续盈利"。这不是"要不要拉新"的问题，是"在哪里拉新"的问题。</strong></p>
   </div>
 </div>
 
@@ -582,46 +452,46 @@ li { margin-bottom: 6px; }
 
   <div class="subsection-title">4.1 小店链路：日常拉新引擎</div>
   <table>
-    <tr><th>指标</th><th>实际CPA（ADQ后台）</th><th>拆解</th></tr>
+    <tr><th>指标</th><th>实际数值</th><th>拆解</th></tr>
     <tr><td>消耗</td><td>2,568,962 元</td><td>YTD 累计</td></tr>
     <tr><td>下单次数</td><td>69,678 次</td><td>YTD 累计</td></tr>
     <tr><td>下单单价</td><td>127.47 元</td><td>实际客单价</td></tr>
     <tr><td class="cpa-highlight" style="background:#fff3cd;"><strong>下单成本(CPA)</strong></td><td><strong class="cpa-highlight">36.87 元</strong></td><td>老客 CPA ~22-25 元 + 新客 CPA ~51-55 元，混合后 36.87 元</td></tr>
     <tr><td>下单 ROI</td><td>3.46</td><td>127.47 ÷ 36.87</td></tr>
   </table>
-  <p>小店链路的 CPA 最低（36.87 元），这是因为老客占比高（~55%）且社交推荐降低了转化门槛。但 36.87 元是新客+老客的<strong>混合 CPA</strong>，排除老客后的真实新客 CAC 约 <strong>50-58 元</strong>。</p>
+  <p>小店链路的 <span class="cpa-highlight">CPA 最低（36.87 元）</span>，这是因为老客占比高（~55%）且社交推荐降低了转化门槛。但 36.87 元是新客+老客的<strong>混合 CPA</strong>，排除老客后的<span class="cac-highlight">真实新客CAC 约 50-58 元</span>。</p>
 
   <table>
     <tr><th>指标</th><th>数值</th><th>说明</th></tr>
     <tr><td>实际CPA（ADQ后台）</td><td><strong class="cpa-highlight">36.87 元</strong></td><td>每单广告花费（含新老客）</td></tr>
-    <tr><td>真实新客 CAC</td><td><strong>50-58 元</strong></td><td>排除老客后反推得出</td></tr>
-    <tr><td>首单毛利</td><td>65 元</td><td>130 × 50%</td></tr>
-    <tr><td>首单覆盖</td><td><strong>+7~15 元盈余</strong></td><td>首单毛利 > 新客 CAC，首单即盈利！</td></tr>
-    <tr><td>回本周期</td><td><strong>首单即回本</strong></td><td>无需等待复购</td></tr>
-    <tr><td>LTV/CAC</td><td><strong>2.9-3.3x</strong></td><td>166 ÷ 50 ≈ 3.3x / 166 ÷ 58 ≈ 2.9x</td></tr>
-    <tr><td>12个月净利/新客</td><td><strong>+108~116 元</strong></td><td>166 - 50 = 116 / 166 - 58 = 108</td></tr>
+    <tr class="cac-highlight-row"><td><strong>真实新客CAC</strong></td><td><strong>50-58 元</strong></td><td>排除老客后反推得出 ← 这是广告出价参考</td></tr>
+    <tr><td>首单毛利</td><td>52-65 元</td><td>130 × (40%~50%)</td></tr>
+    <tr><td>首单覆盖</td><td><strong>-6~+15 元</strong></td><td>40%毛利率微缺6元 / 50%毛利率盈余15元</td></tr>
+    <tr><td>回本周期</td><td><strong>首单打平~1月</strong></td><td>乐观毛利率首单即盈利，保守毛利率1月内回本</td></tr>
+    <tr><td>LTV/CAC</td><td><strong>2.3-3.3x</strong></td><td>133÷58≈2.3x（保守）/ 166÷50≈3.3x（乐观）</td></tr>
+    <tr><td>12个月净利/新客</td><td><strong>+75~116 元</strong></td><td>133-58=75（保守）/ 166-50=116（乐观）</td></tr>
   </table>
 
   <div class="subsection-title">4.2 直播链路：节点爆发放大器</div>
   <table>
-    <tr><th>指标</th><th>实际CPA（ADQ后台）</th><th>拆解</th></tr>
+    <tr><th>指标</th><th>实际数值</th><th>拆解</th></tr>
     <tr><td>消耗</td><td>4,509,985 元</td><td>YTD 累计</td></tr>
     <tr><td>下单次数</td><td>88,984 次</td><td>YTD 累计</td></tr>
     <tr><td>下单单价</td><td>132.52 元</td><td>实际客单价（略高于小店）</td></tr>
     <tr><td class="cpa-highlight" style="background:#fff3cd;"><strong>下单成本(CPA)</strong></td><td><strong class="cpa-highlight">50.68 元</strong></td><td>老客 CPA ~30-35 元 + 新客 CPA ~74-82 元，混合后 50.68 元</td></tr>
     <tr><td>下单 ROI</td><td>2.61</td><td>132.52 ÷ 50.68</td></tr>
   </table>
-  <p>直播链路的 CPA（50.68 元）高于小店（36.87 元），因为直播场景需要更强的即时转化冲动。排除老客后的真实新客 CAC 约 <strong>74-82 元</strong>。直播更适合在大节点集中爆发，利用场景氛围提升即时转化率。</p>
+  <p>直播链路的 <span class="cpa-highlight">CPA（50.68 元）</span>高于小店（36.87 元），因为直播场景需要更强的即时转化冲动。排除老客后的<span class="cac-highlight">真实新客CAC 约 74-82 元</span>。直播更适合在大节点集中爆发，利用场景氛围提升即时转化率。</p>
 
   <table>
     <tr><th>指标</th><th>常规期</th><th>大节点（好友周/双11/年货节）</th></tr>
     <tr><td>实际CPA（ADQ后台）</td><td><strong class="cpa-highlight">~50.68 元</strong></td><td><strong class="cpa-highlight">~45-50 元</strong>（大促流量规模效应摊薄）</td></tr>
-    <tr><td>真实新客 CAC</td><td><strong>74-82 元</strong></td><td><strong>68-76 元</strong></td></tr>
-    <tr><td>首单毛利</td><td>65 元</td><td>65 元</td></tr>
-    <tr><td>首单缺口</td><td>9-17 元</td><td>3-11 元</td></tr>
-    <tr><td>回本周期</td><td><strong>~1.5-2 个月</strong></td><td><strong>~1-1.5 个月</strong></td></tr>
-    <tr><td>LTV/CAC</td><td><strong>2.0-2.2x</strong></td><td><strong>2.2-2.4x</strong></td></tr>
-    <tr><td>12个月净利/新客</td><td>+84~92 元</td><td>+90~98 元</td></tr>
+    <tr class="cac-highlight-row"><td><strong>真实新客CAC</strong></td><td><strong>74-82 元</strong></td><td><strong>68-76 元</strong></td></tr>
+    <tr><td>首单毛利</td><td>52-65 元</td><td>52-65 元</td></tr>
+    <tr><td>首单缺口</td><td>9-30 元</td><td>3-24 元</td></tr>
+    <tr><td>回本周期</td><td><strong>~1.5-3 个月</strong></td><td><strong>~1-2 个月</strong></td></tr>
+    <tr><td>LTV/CAC</td><td><strong>1.6-2.2x</strong></td><td><strong>1.8-2.4x</strong></td></tr>
+    <tr><td>12个月净利/新客</td><td>+51~92 元</td><td>+57~98 元</td></tr>
   </table>
 
   <div class="subsection-title">4.3 全年拉新投入与回报汇总</div>
@@ -633,12 +503,10 @@ li { margin-bottom: 6px; }
     Step 1: 下半年还需 6800 万 GMV → 老客贡献约 3500-4000 万 → 新客需贡献 2800-3300 万<br>
     Step 2: 按客单价 130 元、12个月 2.55 单 → 每个新客首年贡献 332 元收入<br>
     Step 3: 2800-3300 万 ÷ 332 元 → 需要约 <span class="result">42-50 万新客</span>（取 50 万为目标）<br>
-    Step 4: 第一部分已证明真实新客 CAC ≈ <span class="result">60-75 元</span>（小店~54 / 直播~78 加权均值）<br>
+    Step 4: 第一部分已证明 <span class="cac-highlight">真实新客CAC</span> ≈ <span class="result">60-75 元</span>（小店~54 / 直播~78 加权均值）<br>
     Step 5: 50 万 × 60-75 元 = <span class="result">3,000-3,750 万元</span> → 取 <span class="result">3,500-4,000 万元</span>（留安全边际）<br><br>
     <span class="result">→ 全年拉新总投入约 3,500-4,000 万元</span>
   </div>
-
-  <p>这个数字不是"给了一个预算去花"，而是"需要多少新客 × 每个新客真实成本（基于 ADQ 实测数据反推）"的自然结果。客户要做的不是"能不能花 4000 万"，而是"<strong>50 万新客、首单即接近打平、12 个月 LTV/CAC 2.0-2.6 倍——这笔投资值不值得做</strong>"。答案显然是值得的。</p>
 
   <div class="stat-grid">
     <div class="stat-card">
@@ -647,7 +515,7 @@ li { margin-bottom: 6px; }
     </div>
     <div class="stat-card green">
       <div class="value">~64元</div>
-      <div class="label">真实新客CAC（加权均值）</div>
+      <div class="label"><span class="cac-highlight">真实新客CAC</span>（加权均值）</div>
     </div>
     <div class="stat-card gold">
       <div class="value">~3,500-4,000万</div>
@@ -661,34 +529,34 @@ li { margin-bottom: 6px; }
 
   <h4>分链路投入明细</h4>
   <table>
-    <tr><th>链路</th><th>新客目标</th><th>实际CPA（出价）</th><th>真实新客CAC</th><th>首单毛利</th><th>回本周期</th><th>拉新投入</th><th>LTV/CAC</th></tr>
-    <tr class="cpa-highlight-row"><td><strong>小店</strong></td><td>30 万</td><td><strong>36.87 元</strong></td><td>50-58 元</td><td>65 元</td><td><strong>首单即回本</strong></td><td>~1,500-1,750 万</td><td><strong>2.9-3.3x</strong></td></tr>
-    <tr class="cpa-highlight-row"><td><strong>直播</strong></td><td>20 万</td><td><strong>50.68 元</strong></td><td>74-82 元</td><td>65 元</td><td><strong>~1.5-2 月</strong></td><td>~1,500-1,650 万</td><td><strong>2.0-2.2x</strong></td></tr>
-    <tr><td><strong>合计</strong></td><td><strong>50 万</strong></td><td><strong>42.11 元</strong></td><td><strong>~60-75 元</strong></td><td>—</td><td><strong>~首单打平</strong></td><td><strong>~3,500-4,000 万</strong></td><td><strong>2.2-2.6x</strong></td></tr>
+    <tr><th>链路</th><th>新客目标</th><th><span class="cpa-highlight">实际CPA（出价）</span></th><th><span class="cac-highlight">真实新客CAC</span></th><th>首单毛利</th><th>回本周期</th><th>拉新投入</th><th>LTV/CAC</th></tr>
+    <tr><td><strong>小店</strong></td><td>30 万</td><td><strong class="cpa-highlight">36.87 元</strong></td><td><strong class="cac-highlight">50-58 元</strong></td><td>52-65 元</td><td><strong>首单打平~1月</strong></td><td>~1,500-1,750 万</td><td><strong>2.3-3.3x</strong></td></tr>
+    <tr><td><strong>直播</strong></td><td>20 万</td><td><strong class="cpa-highlight">50.68 元</strong></td><td><strong class="cac-highlight">74-82 元</strong></td><td>52-65 元</td><td><strong>~1.5-3 月</strong></td><td>~1,500-1,650 万</td><td><strong>1.6-2.2x</strong></td></tr>
+    <tr><td><strong>合计</strong></td><td><strong>50 万</strong></td><td><strong class="cpa-highlight">42.11 元</strong></td><td><strong class="cac-highlight">~60-75 元</strong></td><td>—</td><td><strong>~1-2 月</strong></td><td><strong>~3,500-4,000 万</strong></td><td><strong>1.8-2.6x</strong></td></tr>
   </table>
-  <p style="font-size: 0.85rem; color: var(--text-light);">注：<span class="cpa-highlight">黄色高亮</span>为 ADQ 后台实际的 CPA 出价/下单成本；CAC 为排除老客后的真实新客获取成本。两者差异源于老客订单对混合 CPA 的稀释作用。</p>
+  <p style="font-size: 0.85rem; color: var(--text-light);">注：<span class="cpa-highlight">黄色=CPA</span>（ADQ后台实际下单成本，混合新老客）；<span class="cac-highlight">绿色=真实新客CAC</span>（排除老客后的真实新客获客成本，广告出价参考）。两者差异源于老客订单对混合 CPA 的稀释作用。</p>
 
   <h4>全年回报预估</h4>
   <table>
     <tr><th>项目</th><th>金额</th><th>说明</th></tr>
     <tr><td>50万新客首年LTV收入</td><td><strong>~16,600 万</strong></td><td>50万 × 332 元</td></tr>
-    <tr><td>50万新客首年LTV毛利</td><td><strong>~8,300 万</strong></td><td>50万 × 166 元</td></tr>
+    <tr><td>50万新客首年LTV毛利</td><td><strong>~6,650-8,300 万</strong></td><td>50万 × (133~166) 元</td></tr>
     <tr><td>其中：7个月内（Jul-Jan）可确认收入</td><td>~10,000-12,000 万</td><td>首购 + 前6个月复购</td></tr>
     <tr><td>老客下半年贡献（估）</td><td>~3,500-4,000 万</td><td>按YTD月均530万 × 7个月</td></tr>
     <tr><td><strong>下半年总GMV预估</strong></td><td><strong>~13,500-16,000 万</strong></td><td><strong>远超6,800万缺口</strong></td></tr>
-    <tr><td>拉新总投入</td><td>~3,500-4,000 万</td><td>LTV毛利 8,300万 ÷ 投入 3500-4000万 = 2.1-2.4x</td></tr>
+    <tr><td>拉新总投入</td><td>~3,500-4,000 万</td><td>LTV毛利 6,650-8,300万 ÷ 投入 3,500-4,000万 = 1.7-2.4x</td></tr>
   </table>
 
   <div class="subsection-title">4.4 两条链路的分工</div>
   <table class="summary-table">
     <tr><th>维度</th><th>小店链路</th><th>直播链路</th></tr>
     <tr><td>角色</td><td>日常拉新引擎</td><td>节点爆发放大器</td></tr>
-    <tr><td>实际CPA（ADQ出价）</td><td><span class="cpa-highlight">36.87 元</span></td><td><span class="cpa-highlight">50.68 元</span></td></tr>
-    <tr><td>真实新客CAC</td><td>50-58 元</td><td>74-82 元</td></tr>
-    <tr><td>回本周期</td><td>首单即回本</td><td>~1.5-2 个月</td></tr>
+    <tr><td><span class="cpa-highlight">实际CPA（ADQ出价）</span></td><td>36.87 元</td><td>50.68 元</td></tr>
+    <tr><td><span class="cac-highlight">真实新客CAC</span></td><td>50-58 元</td><td>74-82 元</td></tr>
+    <tr><td>回本周期</td><td>首单打平~1月</td><td>~1.5-3 个月</td></tr>
     <tr><td>发力节奏</td><td>常规月份持续投入</td><td>仅大节点集中爆发</td></tr>
-    <tr><td>核心优势</td><td>CPA最低(36.87)，首单即盈利，LTV/CAC最高(2.9-3.3x)</td><td>大促期间规模效应+社交裂变</td></tr>
-    <tr><td>LTV/CAC</td><td><strong>2.9-3.3x</strong></td><td><strong>2.0-2.2x</strong></td></tr>
+    <tr><td>核心优势</td><td>CPA最低(36.87)，CAC最低(50-58)，LTV/CAC最高(2.3-3.3x)</td><td>大促期间规模效应+社交裂变</td></tr>
+    <tr><td>LTV/CAC</td><td><strong>2.3-3.3x</strong></td><td><strong>1.6-2.2x</strong></td></tr>
   </table>
 </div>
 
@@ -697,11 +565,11 @@ li { margin-bottom: 6px; }
   <div class="section-title">总结：新旧逻辑对比</div>
   <table class="summary-table">
     <tr><th>维度</th><th>旧逻辑（费比倒推）</th><th>新逻辑（LTV正推）</th></tr>
-    <tr><td>成本基准</td><td>混合CPA 42.11 元（误作新客成本）</td><td><strong>真实新客 CAC 60-75 元</strong></td></tr>
-    <tr><td>价值基准</td><td>首单 GMV 130 元</td><td><strong>12个月 LTV 332 元 / 毛利 166 元</strong></td></tr>
+    <tr><td>成本基准</td><td><span class="cpa-highlight">混合CPA 42.11 元</span>（误作新客成本）</td><td><strong><span class="cac-highlight">真实新客CAC 60-75 元</span></strong></td></tr>
+    <tr><td>价值基准</td><td>首单 GMV 130 元</td><td><strong>12个月 LTV 332 元 / 毛利 133-166 元</strong></td></tr>
     <tr><td>决策指标</td><td>单笔 ROI ≥ 2.9</td><td><strong>LTV/CAC ≥ 1.5</strong></td></tr>
-    <tr><td>回本周期</td><td>要求当笔回本</td><td><strong>首单打平或 ~1.5-2 个月</strong></td></tr>
-    <tr><td>出价空间</td><td>42 元封顶（CPA）</td><td><strong>可接受真实新客 CAC 至 75-82 元（LTV/CAC 仍 2.0x+）</strong></td></tr>
+    <tr><td>回本周期</td><td>要求当笔回本</td><td><strong>1-2 个月（乐观首单打平）</strong></td></tr>
+    <tr><td>出价空间</td><td>42 元封顶（CPA）</td><td><strong>可接受<span class="cac-highlight">真实新客CAC</span>至 75-82 元（LTV/CAC 仍 1.6-2.0x+）</strong></td></tr>
     <tr><td>增长结果</td><td>被42元天花板锁死</td><td><strong>3,500-4,000万投入撬动50万新客，12个月LTV收入1.66亿</strong></td></tr>
   </table>
 
@@ -710,7 +578,7 @@ li { margin-bottom: 6px; }
       费比倒推的逻辑是"我能花多少钱"<br>
       LTV正推的逻辑是"我该花多少钱"<br><br>
       当客户从"能花"转向"该花"，
-      从"CPA 42元"看清"CAC 60-70元"<br>
+      从"<span class="cpa-highlight">CPA 42元</span>"看清"<span class="cac-highlight">真实新客CAC 60-70元</span>"<br>
       42元的天花板就变成了1.66亿的增长空间。
     </p>
   </div>
@@ -719,7 +587,7 @@ li { margin-bottom: 6px; }
 <div class="footer">
   <p>锋味派视频号拉新策略 | 从"费比倒推"到"LTV正推"</p>
   <p>基于客户ADQ实际投放数据、视频号社交电商场域数据、LTV模型推演 | 2026年6月</p>
-  <p style="margin-top: 8px; font-size: 0.8rem;">注：毛利率按50%计算；CPA数据来自客户ADQ后台实际导出；新客CAC为基于老客占比假设的反推值，建议通过ADQ分层投放验证</p>
+  <p style="margin-top: 8px; font-size: 0.8rem;">注：毛利率按40-50%区间计算；<span class="cpa-highlight">CPA</span>数据来自客户ADQ后台实际导出；<span class="cac-highlight">真实新客CAC</span>为基于老客占比假设的反推值，建议通过ADQ分层投放验证</p>
 </div>
 
 </div>
